@@ -2,10 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
 class Solution {
 
     public static void main(String args[]) {
@@ -18,12 +14,8 @@ class Solution {
             strenghts.add(pi);
         }
 
-        // Write an action using System.out.println()
-        // To debug: System.err.println("Debug messages...");
-
         Collections.sort(strenghts);
         int closestStrenght = calculateClosestStrenght(strenghts);
-        //System.err.println(strenghts.toString());
         System.out.println(closestStrenght);
     }
     

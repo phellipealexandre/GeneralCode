@@ -2,10 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
 class Player {
 
     public static void main(String args[]) {
@@ -19,7 +15,6 @@ class Player {
         int rotationAngle = 0;
         int fuelPower = 1;
 
-        // game loop
         while (true) {
             int X = in.nextInt();
             int Y = in.nextInt();
@@ -29,8 +24,7 @@ class Player {
             int rotate = in.nextInt(); // the rotation angle in degrees (-90 to 90).
             int power = in.nextInt(); // the thrust power (0 to 4).
 
-            // Write an action using System.out.println()
-            // To debug: System.err.println("Debug messages...");
+            //TODO: Magic number correction
             if (Y > 1650) {
                 if (vSpeed <= -40)
                     fuelPower = 3;
@@ -42,9 +36,7 @@ class Player {
                 else
                     fuelPower = 3;
             }
-                
             
-
             System.out.println(rotationAngle + " " + fuelPower); // rotate power. rotate is the desired rotation angle. power is the desired thrust power.
         }
     }

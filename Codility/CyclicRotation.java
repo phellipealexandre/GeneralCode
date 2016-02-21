@@ -1,7 +1,6 @@
 class Solution {
     public int[] solution(int[] A, int K) {
         
-        
         int rotations = (A.length == 0 || K == 0) ? 0 : K % A.length;
         
         for (int i=0; i<rotations; i++) {

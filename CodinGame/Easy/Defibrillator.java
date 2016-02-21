@@ -2,10 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
 class Solution {
 
     public static void main(String args[]) {
@@ -24,22 +20,18 @@ class Solution {
         
         for (int i = 0; i < N; i++) {
             String DEFIB = in.nextLine();
-            //System.err.println(DEFIB);
             String[] splited = DEFIB.split(";");
             
             double defibrillatorLng = parseDoubleString(splited[4]);
             double defibrillatorLat = parseDoubleString(splited[5]);
             double distance = calculateDistance(userLat, userLng, defibrillatorLat, defibrillatorLng);
-            //System.err.println("Distance: " + distance);
             
             if (distance < shortestDistance) {
                 shortestDistance = distance;
                 shortestName = splited[1];
             }
         }
-
-        // Write an action using System.out.println()
-        // To debug: System.err.println("Debug messages...");
+        
         System.out.println(shortestName);
     }
     

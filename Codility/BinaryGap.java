@@ -1,4 +1,5 @@
 class Solution {
+    
     public int solution(int N) {
         int maxGap = 0;
         int currentGap = 0;
@@ -21,7 +22,6 @@ class Solution {
             
             N = N >> 1;
         }
-        
         
         return maxGap;
     }

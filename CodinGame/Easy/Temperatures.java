@@ -2,10 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- **/
 class Solution {
 
     public static void main(String args[]) {
@@ -13,12 +9,8 @@ class Solution {
         int N = in.nextInt(); // the number of temperatures to analyse
         in.nextLine();
         String TEMPS = in.nextLine(); // the N temperatures expressed as integers ranging from -273 to 5526
-        
         String[] split = TEMPS.split(" ");
         int result = 0;
-        // Write an action using System.out.println()
-        // To debug: System.err.println("Debug messages...");
-        
 
         if (N != 0) {
             result = 5527;

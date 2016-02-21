@@ -2,12 +2,6 @@ import java.util.*;
 import java.io.*;
 import java.math.*;
 
-/**
- * Auto-generated code below aims at helping you parse
- * the standard input according to the problem statement.
- * ---
- * Hint: You can use the debug stream to print initialTX and initialTY, if Thor seems not follow your orders.
- **/
 class Player {
 
     public static void main(String args[]) {
@@ -20,14 +14,10 @@ class Player {
         int thorX = initialTX;
         int thorY = initialTY;
         
-        // game loop
         while (true) {
             int remainingTurns = in.nextInt();
             String directionX = "";
             String directionY = "";
-
-            // Write an action using System.out.println()
-            // To debug: System.err.println("Debug messages...");
             
             if (thorX > lightX) {
                 directionX = "W";
@@ -45,7 +35,6 @@ class Player {
                 thorY++;
             }
 
-            
             System.out.println(directionY + directionX); // A single line providing the move to be made: N NE E SE S SW W or NW
         }
     }
